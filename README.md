@@ -2,8 +2,8 @@
 
 ## Instruktioner
 **Följande kursmål testas av**:
-K1: Specialiserade kunskaper inom utveckling med HTML och CSS.
-K2: Kunskaper om och överblick över angränsande områden såsom projektledning, testning,
+* K1: Specialiserade kunskaper inom utveckling med HTML och CSS.
+* K2: Kunskaper om och överblick över angränsande områden såsom projektledning, testning,
 webben som plattform samt grundläggande UX/UI.
 
 Du ska utveckla en mindre responsiv webbplats och du kommer själv få kreativ frihet i hur den ska se ut. I detta repo finns i mappen **img** en bild med en färgpalett du kan använda och ett flertal bilder. Ni kan använda er av lorem ipsum text.

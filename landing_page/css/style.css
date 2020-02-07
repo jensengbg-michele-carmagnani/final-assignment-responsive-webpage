@@ -1,0 +1,91 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+
+}
+
+header {
+    grid-column: -1 / 1;
+    background-color: aquamarine;
+    height: 100vh;
+}
+.feature {
+    height: 200px;
+    background-color: burlywood;
+    grid-column: -1/1;
+    
+    
+}
+
+.explanation {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-wrap: nowrap;
+    
+    
+    
+    
+}
+.feature {
+    border: #000000 solid 1px;
+    flex: 1 1 auto;
+   
+    
+    
+}
+.content {
+    display: flex;
+    height: 200px;
+    background-color: cornsilk;
+    
+}
+.description {
+    border: #000000 solid 1px;
+}
+
+.specification {
+    height: 100vh;
+    background-color: rgb(236, 134, 0);
+    grid-column: -1/1;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+    
+}
+.highlight {
+    height: 100vh;
+    background-color: rgb(135, 222, 174);
+    grid-column: -1/1;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+    
+}
+
+
+/*<----------- @media queries ---------------->*/
+    /* @media only screen and (max-width: 600px) {
+    .explanation {
+        flex-direction: column;
+    }
+    } */
+
+
+
+
+
+
+/* <---------- Contact page ------------->  */
+
+.contact {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: cadetblue;
+}

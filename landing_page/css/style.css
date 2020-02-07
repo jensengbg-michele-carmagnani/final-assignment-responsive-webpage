@@ -8,8 +8,11 @@
 }
 
 header {
-    
-    background-color: aquamarine;
+    background-image: url(../img/header2.jpg);
+    background-color: #f2f2f2;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 100vh;
 }
 
@@ -60,18 +63,27 @@ button {
     
 }
 .description {
-    border: #000000 solid 1px;
-    background-color: cornsilk;
+    color: #f2f2f2;
+    background-color: #13293d;
     flex: 1 1 480px;
     height: 200px;
+    text-align: center;
     
     
 }
 .description2 {
     background-image: url(../img/undraw_like_dislike_1dfj.png
     );
-    height: 200px;
-    object-fit: fill;
+    background-size: contain;
+    background-position: center;
+
+    
+    
+}
+.description3{
+    background-image: url(../img/undraw_Mobile_app_p3ts.png);
+    background-size: contain;
+    background-position: center;
 }
 
 .specification {

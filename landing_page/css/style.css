@@ -41,6 +41,8 @@ button {
 .explanation {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
 
 }
 
@@ -50,9 +52,14 @@ button {
     border: black 1px solid;
     height: 200px;
     
+    
+    
    
     
     
+}
+box h4, p {
+    margin:10px;
 }
 
 .content {
@@ -62,20 +69,28 @@ button {
     
     
 }
+
+
 .description {
     color: #f2f2f2;
     background-color: #13293d;
     flex: 1 1 480px;
     height: 200px;
     text-align: center;
+    /* border: solid 1px black; */
+    align-items: center;
     
     
+}
+.description1{
+    align-self: center;
 }
 .description2 {
     background-image: url(../img/undraw_like_dislike_1dfj.png
     );
     background-size: contain;
     background-position: center;
+    /* background-repeat: no-repeat; */
 
     
     
@@ -84,22 +99,35 @@ button {
     background-image: url(../img/undraw_Mobile_app_p3ts.png);
     background-size: contain;
     background-position: center;
+    /* background-repeat: no-repeat; */
 }
-
+.content p {
+    margin: 10px;
+}
 .specification {
     background-color: rgb(236, 134, 0);
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: column; 
     
     
+}
+.specification{
+    display: grid;
+    grid-template-areas: 'spe1 spe2 spe3'
+                            'spe4 spe5 spe6';
+    grid-template-rows: auto;
 }
 .boxspe {
     flex: 1 1 250px;
     border: 1px solid goldenrod;
     
    
+}
+
+.description1 {
+
 }
 /* .highlight {
     height: 100vh;

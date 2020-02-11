@@ -3,33 +3,46 @@
 .wrapper {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    /* padding-right: 100px;
+    padding-left: 100px; */
     
 
 }
+                /* HEADER SECTION  */
 
 header {
     background-image: url(../img/header2.jpg);
     background-color: #f2f2f2;
     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  
     height: 100vh;
 }
 
+ header .Imgheader{
+   
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 .navbox{
-    position: fixed;
-    top: 0;
-    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
     font-size: 20px;
-    background-color: rgba(63, 127, 191, 0.7) ;
+    background-color: rgba(63, 127, 191, 0.9) ;
+    border-radius: 10px;
 
     
 
 }
 .navbox a{
     padding: 20px;
+    flex: 1, 1, auto;
     align-self: center;
     text-decoration: none;
     
@@ -45,6 +58,12 @@ button {
     height: 50px;
     align-self: center;
 }
+.fas.fa-bars {
+    display: none;
+}
+
+                    
+                /* FEATURE SECTION  */
 
 .explanation {
     display: flex;
@@ -60,13 +79,9 @@ button {
     border: black 1px solid;
     height: 200px;
     
-    
-    
-   
-    
-    
 }
-box h4, p {
+
+.box h4, p {
     margin:10px;
 }
 
@@ -78,80 +93,121 @@ box h4, p {
     
 }
 
-
+/* --------------SECTION CONTENT ---------------- */
+                    
 .description {
     color: #f2f2f2;
     background-color: #13293d;
     flex: 1 1 480px;
     height: 200px;
     text-align: center;
-    /* border: solid 1px black; */
     align-items: center;
     
     
 }
 
-.description2 {
-    background-image: url(../img/undraw_like_dislike_1dfj.png
-    );
+ .content img.imgdescription {
+    display: block;
     background-size: contain;
     background-position: center;
-    /* background-repeat: no-repeat; */
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
 
     
     
 }
-.description3{
-    background-image: url(../img/undraw_Mobile_app_p3ts.png);
-    background-size: contain;
-    background-position: center;
-    /* background-repeat: no-repeat; */
-}
+
+
 .content p {
     margin: 10px;
 }
-.specification {
+
+ /*------------- SPECIFICATION SECTION -----------------  */
+
+.specification{
+    /* display: grid;
+    grid-template-columns: repeat(1, 1fr); */
+    /* grid-template-areas: 'spe1 spe2 spe3'
+                            'spe4 spe5 spe6'; */
+    grid-template-rows: auto;
+    height: 100%    ;
+}
+.boxspe{
+    height: auto;
+    border: 1px solid rgb(29, 23, 8);
     background-color: rgb(236, 134, 0);
-    height: 100vh;
+
+}
+.boxspe.spe1, .boxspe.spe3, .boxspe.spe4, .boxspe.spe6 {
+    
+    height: auto;
+    border: 1px solid rgb(29, 23, 8);
+    background-color: rgb(236, 134, 0);
+    text-align: center;
+
+    
+    
+}
+.boxspe.spe5 img {
+    /* background-image: url(../img/CUSCINO_MG_8508_foto1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10rem; */
+    height: 13rem ;
+    width: 13rem    ;
+    
+}
+
+ /*----------- FOOTER SECTION---------------- */
+
+.footcontainer {
+    height: auto;
+    background-color: blueviolet;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column; 
-    
-    
+    justify-content: space-around;
 }
-.specification{
-    display: grid;
-    grid-template-areas: 'spe1 spe2 spe3'
-                            'spe4 spe5 spe6';
-    grid-template-rows: auto;
-}
-.boxspe {
-    flex: 1 1 250px;
-    border: 1px solid goldenrod;
-    
+.listone, .listtwo {
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
    
+
 }
 
-
-/* .highlight {
-    height: 100vh;
-    background-color: rgb(135, 222, 174);
-    grid-column: -1/1;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    
-    
-} */
 
 
 /*<----------- @media queries ---------------->*/
-    /* @media only screen and (max-width: 600px) {
-    .explanation {
-        flex-direction: column;
+    @media only screen and (min-width: 600px) {
+    .specification {
+         display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
     }
-    } */
+    .spe1 {
+    grid-column: 1, 1;
+    grid-row: 1 /span 1;
+    }
+    .fas.fa-bars {
+        display: block;
+    }
+    
+}
+
+@media only screen and (max-width: 500px){
+    .content img.imgdescription{
+        width: 50%;
+        padding: 10px;
+    }
+    .navbox {
+        display: none;
+    }
+    .fas.fa-hamburger {
+        display: block;
+    }
+}
 
 
 

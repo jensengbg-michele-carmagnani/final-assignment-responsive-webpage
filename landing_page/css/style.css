@@ -97,10 +97,11 @@ button {
 
  .description-contain {
      object-fit: contain;
+     height: 100%;
    
 }
 img[class]{
-    width: 100%;
+    width: 50%%;
 }
 
 

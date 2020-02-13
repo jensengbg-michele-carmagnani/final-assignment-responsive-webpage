@@ -12,14 +12,14 @@
 <body>
     <div class="wrapper">
         <header>
-            <i class="fas fa-hamburger">
+            <!-- <i class="fas fa-hamburger">
                 <a href="#home" >Home</a>
                 <a href="#feature">Feature</a>
                 <a href="#specification">Specification</a>
-                <a href="#footcontainer">footer </a>
+                <a href="contact.html">Contact </a>
                 <a href="#">buy</a>
-            </i>
-            <nav class="navbox">
+            </i> -->
+            <!-- <nav class="navbox">
                 
                 <a href="" class="#home">Home</a>
                 <a href="#feature" >Feature</a>
@@ -27,6 +27,45 @@
                 <a href="contact.html" >Contact </a>
                 <button>Buy</button>
                 
+            </nav> -->
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+                    <input type="checkbox" />
+            
+                    <!--
+                Some spans to act as a hamburger.
+                
+                They are acting like a real hamburger,
+                not that McDonalds stuff.
+                -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+            
+                    <!--
+                Too bad the menu has to be inside of the button
+                but hey, it's pure CSS magic.
+                -->
+                    <ul id="menu">
+                        <a href="#">
+                            <li>Home</li>
+                        </a>
+                        <a href="#feature">
+                            <li>Feature</li>
+                        </a>
+                        <a href="#specification">
+                            <li>Specification</li>
+                        </a>
+                        <a href="contact.html">
+                            <li>Contact</li>
+                        </a>
+                        
+                    </ul>
+                </div>
             </nav>
             <img class="objct-contain" src="img/header2.jpg" alt="header">
             
@@ -65,12 +104,12 @@
                     
                 </div>
             </section>
-            <section id="specification"class="specification">
+            <section id="specification" class="specification">
                 <div class="boxspe spe1"><h4>This is en explanation</h4>
                 <p>ipsum dolor, sit amet consectetur adipisicing elit. Corporis esse inventore cumque quam vitae, alias reiciendis
                     repudiandae quibusdam nihil laborum voluptate ipsa tempora modi aspernatur! Doloremque, repudiandae. Excepturi, at
                     laboriosam!</p></div>
-                <div class="boxspe spe2">2</div>
+                <div class="boxspe spe2">   </div>
                 <div class="boxspe spe3"><h4>This is en explanation</h4>
                 <p>ipsum dolor, sit amet consectetur adipisicing elit. Corporis esse inventore cumque quam vitae, alias reiciendis
                     repudiandae quibusdam nihil laborum voluptate ipsa tempora modi aspernatur! Doloremque, repudiandae. Excepturi, at
@@ -91,18 +130,14 @@
         
         <footer>
             <div id='footcontainer' class="footcontainer">
-                <ul class="listone">
-                    <li>Credit</li>
-                    <li>about us</li>
-                    <li>karmacare Ab</li>
-                    <li>fdasfafdaf</li>
+                <ul class="footerlist">
+                    <i class="fas fa-arrow-alt-circle-right"><li>Credit</li></i>
+                     <li>about us</li>
+                     <li>info</li>
+                    <li>karmacare</li>  
+                
                 </ul>
-                <ul class="listtwo">
-                    <li>Credit</li>
-                    <li>about us</li>
-                    <li>karmacare Ab</li>
-                    <li>dfadfad</li>
-                </ul>
+               
             </div>
 
         </footer>

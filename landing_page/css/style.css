@@ -31,6 +31,7 @@ img[class] {
   
   -webkit-user-select: none;
   user-select: none;
+  opacity: 0.9;
 }
 
 #menuToggle a
@@ -39,11 +40,18 @@ img[class] {
   color: #eeeeee    ;
   
   transition: color 0.5s ease;
+  transform: scale(1,1);
 }
 
 #menuToggle a:hover
 {
   color: tomato;
+}
+#menuToggle a li:hover {
+    font-size: 1.8rem;
+    transform: translateX(10px);
+
+
 }
 
 
@@ -105,7 +113,7 @@ img[class] {
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #13293d;
+
 }
 
 /*
@@ -138,7 +146,7 @@ img[class] {
   padding-top: 125px;
   border-radius: 25px;
   
-  opacity: 0,4;
+    opacity: 1;
   background-color: #2680d3;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;

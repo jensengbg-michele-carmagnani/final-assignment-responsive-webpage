@@ -1,5 +1,20 @@
 
 
+
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    
+   
+    
+    
+
+}
+  /*----------- HEADER SECTION------------  */
+
 header {
     background-image: url(../img/babyheader1.jpg);
     background-attachment: fixed;
@@ -8,40 +23,14 @@ header {
     background-position: center;
 }
 
-.contact {
-    background-image: url(../img/babyheader1.jpg);
-    background-attachment: fixed;
-    height: 50vh;
-    background-size: cover;
-    background-position: center;
-    background-position-y: -150px ;
-    background-repeat: no-repeat;
-}
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    /* padding-right: 100px;
-    padding-left: 100px; */
-    
-    
-
-}
-                /* HEADER SECTION  */
 
 
-.objct-contain {
-    object-fit: contain;
-}
-img[class] {
-    width: 100%;
-}
 
-
-/* -----menu------- */
+/* -----MENU ------- */
 #menuToggle
 {
   display: block;
-  position: relative;
+  position: absolute  ;
   top: 50px;
   left: 40px;
   
@@ -135,7 +124,7 @@ img[class] {
 }
 
 /*
- * But let's hide the middle one.
+ *  hide the middle one.
  */
 #menuToggle input:checked ~ span:nth-last-child(3)
 {
@@ -155,8 +144,7 @@ img[class] {
  * Make this absolute positioned
  * at the top left of the screen
  */
-#menu
-{
+#menu {
   position: absolute;
   width: 300px;
   margin: -100px 0 0 -50px;
@@ -167,15 +155,15 @@ img[class] {
     opacity: 1;
   background-color: #2680d3;
   list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
+  
+  
   
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
-
+  
 #menu li
 {
   padding: 10px 0;
@@ -200,14 +188,18 @@ img[class] {
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
+    background-color: #e8adbc;
 
 }
 
 .box {
     
     flex: 1 1 250px;
-    border: black 1px solid;
-    height: 200px;
+    border: white 1px solid;
+    height: 300px;
+    border-radius: 100px 0px;
+    background-color: #40b3a2;
+    opacity: 0.7;
     
 }
 
@@ -222,14 +214,7 @@ img[class] {
     
     
 }
-/* <-------------- FEATURE -----------> */
-.feature {
-    /* height: 100vh; */
-}
 
-.box {
-    
-}
 
 
 
@@ -244,26 +229,35 @@ img[class] {
     height: 200px;
     text-align: center;
     align-items: center;
-    
-    
-    
 }
 
 
  .description-contain {
      object-fit: contain;
-     height: 100%;
+     max-height: 100%;
+     max-width: 100%;;
    
 }
-img[class]{
-    width: 50%%;
-}
+
 
 
 .content p {
     margin: 10px;
 }
-
+.description2 {
+  background-image: url(../img/CUSCINO_MG_8508_foto1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0vmax ;
+  opacity: 0.8  ;
+}
+.description3 {
+  background-image: url(../img/CUSCINO_MG_8508_foto1b.png   );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0vmax ;
+  opacity: 0.8;
+}
  /*------------- SPECIFICATION SECTION -----------------  */
 
 .specification{
@@ -276,28 +270,30 @@ img[class]{
 }
 .boxspe{
     height: auto;
-    border: 1px solid rgb(29, 23, 8);
+ 
     
 
 }
 .boxspe.spe1, .boxspe.spe3, .boxspe.spe4, .boxspe.spe6 {
     
-    height: auto;
-    border: 1px solid rgb(29, 23, 8);
+text-align: center;
 
-    text-align: center;
-
+    
+}
+.boxspe.spe5  {
+    background-image: url(../img/CUSCINO_MG_8544_foto5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     
     
 }
-.boxspe.spe5 img {
-    /* background-image: url(../img/CUSCINO_MG_8508_foto1.png);
-    background-size: contain;
+.boxspe.spe2  {
+    background-image: url(../img/CUSCINO_MG_8315_foto7.png);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 10rem; */
-    height: 13rem ;
-    width: 13rem    ;
+    
     
 }
 
@@ -306,17 +302,14 @@ img[class]{
 .footcontainer {
     height: 200px;
     width: 100%;
-    background-color: #379683;
+    background-color: #c38d9d;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* background-image: url(../img/footer3.jpg);
-    background-position: center;
-    background-size: cover;
-    background-position-y: -280px; */
+    
 }
 .list  {
-    /* text-decoration: none; */
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -334,22 +327,31 @@ img[class]{
   font-size: 1,7rem;
 }
 
+.icons h3{
+  border-bottom: solid 1px #eeeeee;
+  font-size: 25px;
+}
 .icons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     color: #eeeeee;
     
 }
+.fas {
+  padding: 5px;
+}
 .fab {
-  padding: 30px;
+  padding: 10px;
   
 }
 .list .fas a {
   list-style: none;
   text-decoration: none;
   color: whitesmoke;
+  
 }
 
 
@@ -408,10 +410,7 @@ img[class]{
 
 * {
   box-sizing: border-box;
-}
-.container {
-    height: 100%;
-    position: relative;
+ 
 }
 
 
@@ -442,11 +441,6 @@ input[type=submit]:hover {
   background-color: burlywood;
 }
 
-.container {
-  border-radius: 5px;
-  background-color: rgba(red, green, blue, 0.6) ;
-  padding: 20px;
-}
 
 .col-25 {
   float: left;

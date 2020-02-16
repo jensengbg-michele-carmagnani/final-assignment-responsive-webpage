@@ -392,6 +392,11 @@ padding: 10px;
   background-size: cover;
   align-self: center;
 }
+.list .guide h2 {
+  border-bottom: 1px solid #eeeeee;
+  width: 75px;
+  color: #eeeeee;
+}
 
 
 /*<----------- @media queries ---------------->*/

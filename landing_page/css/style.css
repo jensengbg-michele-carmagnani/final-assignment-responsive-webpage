@@ -2,6 +2,12 @@
 
 
 
+*{
+   font-family: 'Tomorrow', sans-serif;
+}
+  
+
+
 
 .wrapper {
     display: grid;
@@ -186,9 +192,9 @@ header {
 .explanation {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    
     text-align: center;
-    background-color: #e8adbc;
+    background-color: #f9f9f9;
 
 }
 
@@ -197,9 +203,9 @@ header {
     flex: 1 1 250px;
     border: white 1px solid;
     height: 300px;
-    border-radius: 100px 0px;
-    background-color: #40b3a2;
     opacity: 0.7;
+    align-items: center;
+    background-color: #ffffff;
     
 }
 
@@ -223,7 +229,7 @@ header {
 .description {
     color: #f2f2f2;
     border: #eeeeee solid 1px   ;
-    background-color: #13293d;
+    background-color:#96caef;
 
     flex: 1 1 480px;
     height: 200px;
@@ -232,14 +238,13 @@ header {
 }
 
 
-.content {
-  opacity: 1;
-}
-
-
 
 .content p {
     margin: 10px;
+}
+.description1, .description2, .description3, .description4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .description2 {
   background-image: url(../img/CUSCINO_MG_8508_foto1.png);
@@ -247,6 +252,7 @@ header {
   background-repeat: no-repeat;
   background-position: 0vmax ;
   opacity: 0.8  ;
+  max-width: 100% ;
 }
 .description3 {
   background-image: url(../img/CUSCINO_MG_8508_foto1b.png   );
@@ -254,7 +260,13 @@ header {
   background-repeat: no-repeat;
   background-position: 0vmax ;
   opacity: 0.8;
+  max-width: 100%;
 }
+.description1.description4 {
+  border-radius:  10px 100px / 120px;
+  border: 1px solid white;
+}
+
  /*------------- SPECIFICATION SECTION -----------------  */
 
 .specification{
@@ -264,16 +276,14 @@ header {
                             'spe4 spe5 spe6'; */
     grid-template-rows: auto;
     height: 100%;
+    padding-bottom: 15px;
 }
-.boxspe{
-    height: 200px;
- 
-    
 
-}
-.boxspe.spe1, .boxspe.spe3, .boxspe.spe4, .boxspe.spe6 {
+.boxspe.spe1, .boxspe.spe2, .boxspe.spe3, .boxspe.spe4, .boxspe.spe5, .boxspe.spe6 {
     
 text-align: center;
+padding: 10px;
+
 
     
 }
@@ -282,6 +292,7 @@ text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    border-radius: 20%;
     
     
 }
@@ -290,6 +301,8 @@ text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    border-radius: 20%;
+    
     
     
 }
@@ -297,9 +310,10 @@ text-align: center;
  /*----------- FOOTER SECTION---------------- */
 
 .footcontainer {
+    
     height: 200px;
     width: 100%;
-    background-color: #c38d9d;
+    background-color: #e7717d;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -314,10 +328,7 @@ text-align: center;
    
 
 }
-.footcontainer .footerlist   {
-    text-decoration: none;
-    list-style: none;
-}
+
 .fas {
   padding-bottom: 10px ;
   color: #eeeeee;
@@ -359,16 +370,11 @@ text-align: center;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
-    }
-    .spe1 {
-    grid-column: 1, 1;
-    grid-row: 1 /span 1;
-    }
-    
-    .fas.fa-hamburger {
-        display: none;
         
     }
+    
+    
+   
     
 }
 
@@ -380,6 +386,9 @@ text-align: center;
     .navbox {
         display: none;
     }
+    .boxspe.spe2, .boxspe.spe5 {
+      height: 300px;
+    }
    
     
    
@@ -392,13 +401,11 @@ text-align: center;
 
 
 
-/* <---------- Contact page ------------->  */
+/* <---------- CONTACT PAGE ------------->  */
 
 .contact2 {
     
-    width: auto;
-    display: grid;
-    grid-template-columns: repeat(-1, 1fr);
+    max-width: 100%;
     background-image: url(../img/header2.jpg);
     background-color: blueviolet;
     background-position: center;
@@ -408,6 +415,9 @@ text-align: center;
 * {
   box-sizing: border-box;
  
+}
+form {
+  background-color: beige;
 }
 
 
@@ -457,6 +467,14 @@ input[type=submit]:hover {
   display: table;
   clear: both;
 }
+.rowbutton {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-right: 10px;
+  
+}
+
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {

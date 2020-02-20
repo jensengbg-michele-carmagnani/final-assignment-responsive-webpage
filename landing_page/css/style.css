@@ -208,8 +208,7 @@ header {
 
 .explanation {
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap  ;
     text-align: center;
     background-color: #f9f9f9;
 
@@ -228,70 +227,73 @@ header {
 
 .box h4, p {
     margin:10px;
+  
 }
 
 .content {
     display: flex;
     flex-wrap: wrap;
-     
-    
-    
 }
 
 
 
 
 /* --------------SECTION CONTENT ---------------- */
-                    
-.description {
-    color: #f2f2f2;
-    border: #eeeeee solid 1px   ;
-    background-color:#96caef;
-
-    flex: 1 1 480px;
-    height: 200px;
-    text-align: center;
-    align-items: center;
+ 
+.content {
+  background-color: #96caef;
 }
-
-
-
 .content p {
     margin: 10px;
 }
-.description1, .description2, .description3, .description4 {
-  margin-top: 10px;
-  margin-bottom: 10px;
+.description {
+    flex: 1 1 480px;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    color: #f2f2f2;
+    background-color:#96caef;
 }
+
+
+
+.description1, .description2, .description3, .description4 {
+  
+  align-self: center;
+}
+
 .description2 {
   background-image: url(../img/CUSCINO_MG_8508_foto1.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0vmax ;
-  opacity: 0.8  ;
-  max-width: 100% ;
+  background-position: center ;
+  opacity: 0.8;
+  min-height: 600px;
+  
 }
 .description3 {
   background-image: url(../img/CUSCINO_MG_8508_foto1b.png   );
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0vmax ;
+  background-position: center  ;
   opacity: 0.8;
-  max-width: 100%;
+  min-height: 600px;
+
 }
 .description1.description4 {
   border-radius:  10px 100px / 120px;
-  border: 1px solid white;
+  
 }
 
  /*------------- SPECIFICATION SECTION -----------------  */
 
 .specification{
-   
-    
+
 display: grid;
 grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(2,1fr);
+grid-template-rows: 500px 500px;
 grid-template-areas: 'spe1 spe2 spe3'
                       'spe4 spe5 spe6';
 padding-bottom: 15px;
@@ -301,12 +303,13 @@ padding-bottom: 15px;
     
 text-align: center;
 padding: 10px;
+border: 1px solid #f1f1ef;
 
     
 }
 .boxspe.spe1{
   grid-area: spe1;
-  background-color: blue;
+  background-color:#e6e9f0;
 }
 .boxspe.spe2  {
     background-image: url(../img/CUSCINO_MG_8315_foto7.png);
@@ -319,9 +322,11 @@ padding: 10px;
 }
 .boxspe.spe3 {
   grid-area: spe3;
+  background-color: #e6e9f0;
 }
 .boxspe.spe4{
   grid-area: spe4;
+  background-color: #e6e9f0;
 }
 
 
@@ -335,6 +340,7 @@ padding: 10px;
 }
 .boxspe.spe6 {
   grid-area: spe6;
+  background-color: #e6e9f0;
 }
 
  /*----------- FOOTER SECTION---------------- */
@@ -343,7 +349,7 @@ padding: 10px;
     
     height: 200px;
     width: 100%;
-    background-color: #e7717d;
+    background-color: #fa6b91;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
